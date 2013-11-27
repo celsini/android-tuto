@@ -13,6 +13,8 @@ public class MainActivity extends Activity {
 	
 	public final static String EXTRA_MESSAGE="com.example.myfirstapp.MESSAGE"; 
 	
+	
+	
 	public void sendMessage(View view){
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
 		EditText editText = (EditText) findViewById(R.id.edit_message);
