@@ -1,5 +1,7 @@
 package com.example.myfisrtapp;
 
+import java.util.List;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -8,6 +10,8 @@ import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.os.Build;
 
 public class DisplayMessageActivity extends Activity {
@@ -24,6 +28,15 @@ public class DisplayMessageActivity extends Activity {
 		textView.setTextSize(40);
 		textView.setText(message);
 		
+		PackageManager packageManager = getPackageManager();
+		List<ResolveInfo> activities = packageManager.queryIntentActivities(intent, 0);
+		boolean isIntentSafe = activities.size() > 0;
+		String isSafe = "";
+		if(isIntentSafe)
+			isSafe="True";
+		else
+			isSafe="False";
+		textView.setText(isSafe);
 		setContentView(textView);
 	}
 

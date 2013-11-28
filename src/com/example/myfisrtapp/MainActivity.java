@@ -9,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.widget.EditText;
 
+@SuppressWarnings("unused")
 public class MainActivity extends Activity {
 	
 	public final static String EXTRA_MESSAGE="com.example.myfirstapp.MESSAGE"; 
