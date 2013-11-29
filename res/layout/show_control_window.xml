@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:onClick="goBack"
+        android:text="@string/btnRegresar" />
+
+    <ToggleButton
+        android:id="@+id/btnToggle"
+        android:textOn="@string/on"
+        android:textOff="@string/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        
+    />
+    
+    <ImageButton android:id="@+id/BtnBoton3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/icono_ok"
+    android:src="@drawable/ic_action_search" />
+</LinearLayout>

@@ -30,6 +30,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.myfirstapp.MainActivity" />
         </activity>
+        <activity android:name="com.example.myfisrtapp.ShowControlWindow"
+            android:label="@string/title_show_control_window"
+            android:parentActivityName="com.example.myfirstapp.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MainActivity" />
+        
+            
+        </activity>
     </application>
 
 </manifest>

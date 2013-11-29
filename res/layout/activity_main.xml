@@ -20,5 +20,13 @@
        android:layout_weight="0.61"
        android:text="@string/button_send" 
        android:onClick="sendMessage" />
+
+   <Button
+       android:id="@+id/btnShowControl"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="0.61"
+       android:onClick="verControles"
+       android:text="@string/btn_show" />
     
 </LinearLayout>
