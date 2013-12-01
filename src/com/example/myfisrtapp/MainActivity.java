@@ -12,7 +12,7 @@ import android.widget.EditText;
 @SuppressWarnings("unused")
 public class MainActivity extends Activity {
 	
-	public final static String EXTRA_MESSAGE="com.example.myfirstapp.MESSAGES"; 
+	public final static String EXTRA_MESSAGE="com.example.myfirstapp.MESSAGESs"; 
 	
 	public void sendMessage(View view){
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
 		startActivity(intent);
 		
 	}
+	
 	
 	public void verControles(View view){
 		Intent intent = new Intent(this, ShowControlWindow.class);
